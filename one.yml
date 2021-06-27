@@ -1,0 +1,12 @@
+---
+- hosts: 192.168.0.103
+  tasks:
+    - name: install package
+      apt:
+        name: apache2
+        state: present
+    - name: add a user
+      user:
+        name: ravi
+        state: present
+...
